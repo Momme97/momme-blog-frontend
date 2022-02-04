@@ -7,6 +7,8 @@ import axios from 'axios';
 //Custom Components
 import FeatureImage from '../components/FeatureImage';
 import TechStack from '../components/TechStack';
+import CertificationCard from '../components/CertificationCard';
+
 export default function Home() {
   const { Meta } = Card;
   const router = useRouter();
@@ -51,82 +53,11 @@ export default function Home() {
           </Card>
         </Col>
         <Col span={6} lg={16} xs={24} md={12}>
-        <TechStack />
-          {/*
-          <Card title="Diese Technologien liegen mir im Blut">
-            <Row gutter={[10, 10]} style={{ marginTop: 10 }}>
-              <Col span={6} lg={12} xs={24} md={12}>
-                <Card title="Frontend" size="small">
-                  <Row gutter={[10, 10]} style={{ marginTop: 10 }}>
-                    <Col span={6} lg={8} xs={24} md={12}>
-                      <Card size='small'>
-                        React
-                      </Card>
-                    </Col>
-                    <Col span={6} lg={8} xs={24} md={12}>
-                      <Card size='small'>
-                        ReactNative
-                      </Card>
-                    </Col>
-                    <Col span={6} lg={8} xs={24} md={12}>
-                      <Card size='small'>
-                        NextJs
-                      </Card>
-                    </Col>
-                  </Row>
-                </Card>
-              </Col>
-              <Col span={6} lg={12} xs={24} md={12}>
-                <Card title="Backend" size="small">
-                  <Row gutter={[10, 10]} style={{ marginTop: 10 }}>
-                    <Col span={6} lg={8} xs={24} md={12}>
-                      <Card size='small'>
-                        NestJs
-                      </Card>
-                    </Col>
-                    <Col span={6} lg={8} xs={24} md={12}>
-                      <Card size='small'>
-                        FastApi
-                      </Card>
-                    </Col>
-                    <Col span={6} lg={8} xs={24} md={12}>
-                      <Card size='small'>
-                        Express
-                      </Card>
-                    </Col>
-                  </Row>
-                </Card>
-              </Col>
-              <Col span={6} lg={24} xs={24} md={12}>
-                <p><b>Sontige Technologien:</b> Strapi, GraphQl, Shopware, Intershop, VueJs</p>
-              </Col>
-            </Row>
-          </Card>
-          
-          */}
-          
+          <TechStack />
         </Col>
       </Row>
-      <Card style={{ marginTop: 10, marginBottom: 10 }} title="Zertifizierungen/Trainings">
-        <Row gutter={[10, 10]} style={{ marginTop: 10 }}>
-          <Col span={6} lg={6} xs={24} md={12}>
-            <Card size="small">
-              Selligent Campaing Fundamentals
-            </Card>
-          </Col>
-          <Col span={6} lg={6} xs={24} md={12}>
-            <Card size="small">
-              Selligent Site Fundamentals
-            </Card>
-          </Col>
-          <Col span={6} lg={6} xs={24} md={12}>
-            <Card size="small">
-              Security Journey White Belt
-            </Card>
-          </Col>
-        </Row>
-
-      </Card>
+      <CertificationCard />
+      
       <h2 style={{ textAlign: 'center' }}>Mein Blog</h2>
       <Row gutter={[10, 10]} style={{ marginTop: 10 }}>
         {blogArticles.map((blogItem, index) => (
