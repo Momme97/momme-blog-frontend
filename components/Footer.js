@@ -11,7 +11,7 @@ export default function Footer() {
                 <div className={style.textLogo}>
                     <CopyrightOutlined style={{ marginRight: 5 }} /> Momme Ristow
                 </div>
-                <div>
+                <div className={style.footerLinks}>
                     <Link href="/impress"><a style={{marginRight:10}}>Impressum</a></Link>
                     <span>Made with <HeartFilled /> in 2022</span>
 

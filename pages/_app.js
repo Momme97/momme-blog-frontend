@@ -1,5 +1,6 @@
 import 'antd/dist/antd.css';
 import React, { useEffect } from 'react';
+import '../styles/globals.css';
 import {
   ApolloClient,
   InMemoryCache,
@@ -41,7 +42,7 @@ function MyApp({ Component, pageProps }) {
       <Header style={{ position: 'fixed', zIndex: 1, width: '100%' }}>
         <HeaderComponent />
       </Header>
-      <Content style={{paddingLeft:40, paddingRight:40, marginTop:65}} >
+      <Content className="content-container" >
         <ApolloProvider client={client}>
           <div style={{ padding: 10 }}>
             <Component {...pageProps} />

@@ -7,3 +7,22 @@
     display: flex;
     justify-content: space-between;
 }
+
+@media only screen and (max-width: 500px) {
+    .bottomContainer {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .textLogo {
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+    .footerLinks {
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    
+} 

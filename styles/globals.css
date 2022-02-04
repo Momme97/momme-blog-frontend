@@ -1,16 +1,12 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+.content-container {
+  padding-left:40px;
+  padding-right:40px;
+  margin-top: 65px;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-* {
-  box-sizing: border-box;
-}
+@media only screen and (max-width: 1000px) {
+  .content-container {
+    padding-left:2px;
+    padding-right:2px;
+  }
+} 
