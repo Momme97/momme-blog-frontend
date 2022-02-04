@@ -72,12 +72,11 @@ export default function Post() {
     <LoadingSpinner />
   );
   if (error) return `Error! ${error.message}`;
-  console.log(data);
 
   return (
     <>
       <Head>
-        <title>{data.blogArticle.data.attributes.Title} | Momme Ristow</title>
+        <title>Blog | {data.blogArticle.data.attributes.Title} | Momme Ristow</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
       <div className={styles.blogNavigation}>

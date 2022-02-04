@@ -1,6 +1,12 @@
+import Head from 'next/head'
+
 export default function Impress() {
     return (
         <div>
+            <Head>
+                <title>Impressum | Momme Ristow</title>
+                <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+            </Head>
             <h1>Impressum</h1>
             <h2>Angaben gem&auml;&szlig; &sect; 5 TMG</h2>
             <p>Momme Ristow<br />

@@ -4,6 +4,7 @@ import { CalendarOutlined, UserOutlined } from '@ant-design/icons';
 import { useRouter } from 'next/router'
 import moment from 'moment';
 import axios from 'axios';
+import Head from 'next/head'
 //Custom Components
 import FeatureImage from '../components/FeatureImage';
 import TechStack from '../components/TechStack';
@@ -15,7 +16,6 @@ export default function Home() {
 
   const [blogArticles, setBlogArticle] = useState([]);
   const [totalPages, setTotalPages] = useState(0);
-
 
   useEffect(() => {
     loadBlogArticles(1);
@@ -30,7 +30,6 @@ export default function Home() {
     let blogRes = await axios.get(`https://strapi.momme-ristow.de/api/blog-articles?pagination[page]=${currentPage}&pagination[pageSize]=6&sort[0]=publishedAt%3Adesc&populate=%2A`, config);
     setBlogArticle(blogRes.data.data);
     setTotalPages(blogRes.data.meta.pagination.pageCount * 10);
-    console.log(blogRes);
   }
 
 
@@ -40,6 +39,10 @@ export default function Home() {
 
   return (
     <div>
+      <Head>
+        <title>Home | Momme Ristow</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      </Head>
       <FeatureImage />
       <Row gutter={[10, 10]} style={{ marginTop: 10 }}>
         <Col span={6} lg={8} xs={24} md={12}>
