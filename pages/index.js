@@ -61,21 +61,29 @@ export default function Home() {
         </Col>
       </Row>
       <CertificationCard />
-      
-      <h2 style={{ textAlign: 'center', marginTop:10 }}>Mein Blog</h2>
+
+      <h2 style={{ textAlign: 'center', marginTop: 10 }}>Mein Blog</h2>
       <Row gutter={[10, 10]} style={{ marginTop: 10 }}>
         {blogArticles.map((blogItem, index) => (
-          <Col span={6} lg={8} xs={24} md={12} onClick={() => router.push(`/post/${blogItem.id}`)} key={index}>
+          <Col span={6} lg={4} xs={24} md={12} onClick={() => router.push(`/post/${blogItem.id}`)} key={index}>
             <Card
               hoverable
               cover={<img alt="example" src={`${process.env.NEXT_PUBLIC_CMS_URL}${blogItem.attributes.articleImage.data.attributes.url}`} />}
-              bodyStyle={{ height: 200 }}
+              bodyStyle={{ height: '100%' }}
 
             >
-              <Meta title={blogItem.attributes.Title} description={blogItem.attributes.Description} style={{ height: 100 }} />
+              <Meta description={
+                <>
+                  <h2 style={{ fontSize: 18 }}>{blogItem.attributes.Title}</h2>
+                  <p style={{ height: 100 }}>{blogItem.attributes.Description}</p>
+                </>
+              } />
               <Divider />
-              <Tag style={{ marginTop: 0 }}><UserOutlined /> {blogItem.attributes.Author}</Tag>
-              <Tag style={{ marginTop: 0 }}><CalendarOutlined /> {moment(blogItem.attributes.publishedAt).locale('de').fromNow()}</Tag>
+              <div style={{display:'flex'}}>
+                <Tag style={{ marginTop: 0 }}><UserOutlined /> {blogItem.attributes.Author}</Tag>
+                <Tag style={{ marginTop: 0 }}><CalendarOutlined /> {moment(blogItem.attributes.publishedAt).locale('de').fromNow()}</Tag>
+              </div>
+
             </Card>
           </Col>
         ))}
