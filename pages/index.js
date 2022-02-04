@@ -6,6 +6,7 @@ import moment from 'moment';
 import axios from 'axios';
 //Custom Components
 import FeatureImage from '../components/FeatureImage';
+import TechStack from '../components/TechStack';
 export default function Home() {
   const { Meta } = Card;
   const router = useRouter();
@@ -50,6 +51,8 @@ export default function Home() {
           </Card>
         </Col>
         <Col span={6} lg={16} xs={24} md={12}>
+        <TechStack />
+          {/*
           <Card title="Diese Technologien liegen mir im Blut">
             <Row gutter={[10, 10]} style={{ marginTop: 10 }}>
               <Col span={6} lg={12} xs={24} md={12}>
@@ -99,6 +102,9 @@ export default function Home() {
               </Col>
             </Row>
           </Card>
+          
+          */}
+          
         </Col>
       </Row>
       <Card style={{ marginTop: 10, marginBottom: 10 }} title="Zertifizierungen/Trainings">
