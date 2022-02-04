@@ -38,10 +38,10 @@ function MyApp({ Component, pageProps }) {
 
   return (
     <Layout>
-      <Header>
+      <Header style={{ position: 'fixed', zIndex: 1, width: '100%' }}>
         <HeaderComponent />
       </Header>
-      <Content style={{paddingLeft:40, paddingRight:40}}>
+      <Content style={{paddingLeft:40, paddingRight:40, marginTop:10}} >
         <ApolloProvider client={client}>
           <div style={{ padding: 10 }}>
             <Component {...pageProps} />
