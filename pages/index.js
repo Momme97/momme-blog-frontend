@@ -24,7 +24,7 @@ export default function Home() {
         'Authorization': 'Bearer ' + '5d808bfc89170d0f731237859337a1dc8fd9ed225106851ce418701c26fd23ed00e80558024d659034726e41bf8b4ce6561987d31636473abb0897cbc08c15945c84c3d04497120530c54aba92b4d096861557a311cade9f9e4092942de0d3b254eeb4cb4c5e7bbe8ffcf0845732bfda51d7e41379380499981c25a6302dcd25'
       }
     }
-    let blogRes = await axios.get(`http://23.88.104.109:1337/api/blog-articles?pagination[page]=${currentPage}&pagination[pageSize]=6&sort[0]=publishedAt%3Adesc&populate=%2A`, config);
+    let blogRes = await axios.get(`https://strapi.momme-ristow.de/api/blog-articles?pagination[page]=${currentPage}&pagination[pageSize]=6&sort[0]=publishedAt%3Adesc&populate=%2A`, config);
     setBlogArticle(blogRes.data.data);
     setTotalPages(blogRes.data.meta.pagination.pageCount * 10);
     console.log(blogRes);
