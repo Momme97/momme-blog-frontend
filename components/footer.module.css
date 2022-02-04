@@ -1,0 +1,9 @@
+.textLogo {
+    display: flex;
+    align-items: center;
+}
+
+.bottomContainer {
+    display: flex;
+    justify-content: space-between;
+}

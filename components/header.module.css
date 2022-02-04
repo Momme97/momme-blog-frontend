@@ -1,0 +1,10 @@
+.textLogo {
+    color:white;
+    font-size: 18px;
+    color:white;
+}
+
+.headerContainer {
+    display: flex;
+    justify-content: center;
+}
