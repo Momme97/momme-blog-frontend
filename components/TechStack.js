@@ -10,14 +10,14 @@ import intershopLogo from '../public/techstack/intershop-logo.png';
 import strapiLogo from '../public/techstack/strapi-logo.png';
 
 import Image from 'next/image'
-
+import style from './techstack.module.css';
 export default function Techstack() {
     return (
         <>
             <Row gutter={[10, 10]}>
                 <Col span={6} lg={4} xs={12} md={8}>
                     <Card hoverable size="small" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-                        <Image src={reactLogo} width={150} height={50}  />
+                        <Image src={reactLogo} width={150} height={50}   />
                     </Card>
                 </Col>
                 <Col span={6} lg={4} xs={12} md={8}>

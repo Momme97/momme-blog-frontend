@@ -62,7 +62,7 @@ export default function Home() {
       </Row>
       <CertificationCard />
       
-      <h2 style={{ textAlign: 'center' }}>Mein Blog</h2>
+      <h2 style={{ textAlign: 'center', marginTop:10 }}>Mein Blog</h2>
       <Row gutter={[10, 10]} style={{ marginTop: 10 }}>
         {blogArticles.map((blogItem, index) => (
           <Col span={6} lg={8} xs={24} md={12} onClick={() => router.push(`/post/${blogItem.id}`)} key={index}>
