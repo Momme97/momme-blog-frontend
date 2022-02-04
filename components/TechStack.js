@@ -1,79 +1,66 @@
 import { Row, Col, Card, Button, Tag, Divider, Pagination } from 'antd';
+import reactLogo from '../public/techstack/react-logo.png';
+import reactnativeLogo from '../public/techstack/reactnative-logo.png';
+import nextjsLogo from '../public/techstack/nextjs-logo.png';
+import nestjsLogo from '../public/techstack/nestjs-logo.png';
+import fastapiLogo from '../public/techstack/fastapi-logo.png';
+import swaggerLogo from '../public/techstack/swagger-logo.png';
+import dockerLogo from '../public/techstack/docker-logo.png';
+import intershopLogo from '../public/techstack/intershop-logo.png';
+import strapiLogo from '../public/techstack/strapi-logo.png';
+
+import Image from 'next/image'
 
 export default function Techstack() {
     return (
         <>
-            <Card title="Diese Technologien nutze ich" size="small">
-                <Row gutter={[10, 10]}>
-                    <Col span={6} lg={12} xs={24} md={12}>
-                        <Card size="small" title="Frontend">
-                            <Row gutter={[10, 10]}>
-                                <Col span={6} lg={8} xs={24} md={12}>
-                                    <Card size="small" hoverable style={{ background: '#001529', color: 'white', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-                                        <a href="https://reactjs.org/" target="_blank"  rel="noreferrer" style={{ color: 'white' }}>React</a>
-                                    </Card>
-                                </Col>
-                                <Col span={6} lg={8} xs={24} md={12}>
-                                    <Card size="small" hoverable style={{ background: '#001529', color: 'white', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-                                        <a href="https://reactnative.dev/" target="_blank"  rel="noreferrer" style={{ color: 'white' }}>ReactNative</a>
-                                    </Card>
-                                </Col>
-                                <Col span={6} lg={8} xs={24} md={12}>
-                                    <Card size="small" hoverable style={{ background: '#001529', color: 'white', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-                                        <a href="https://nextjs.org/" target="_blank"  rel="noreferrer" style={{ color: 'white' }}>Next</a>
-                                    </Card>
-                                </Col>
-                            </Row>
-                        </Card>
-                    </Col>
-                    <Col span={6} lg={12} xs={24} md={12}>
-                        <Card size="small" title="Backend">
-                            <Row gutter={[10, 10]}>
-                                <Col span={6} lg={8} xs={24} md={12}>
-                                    <Card size="small" hoverable style={{ background: '#001529', color: 'white', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-                                        <a href="https://expressjs.com/de/" target="_blank"  rel="noreferrer" style={{ color: 'white' }}>Express</a>
-                                    </Card>
-                                </Col>
-                                <Col span={6} lg={8} xs={24} md={12}>
-                                    <Card size="small" hoverable style={{ background: '#001529', color: 'white', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-                                        <a href="https://nestjs.com/" target="_blank"  rel="noreferrer" style={{ color: 'white' }}>NestJs</a>
-                                    </Card>
-                                </Col>
-                                <Col span={6} lg={8} xs={24} md={12}>
-                                    <Card size="small" hoverable style={{ background: '#001529', color: 'white', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-                                        <a href="https://fastapi.tiangolo.com/" target="_blank"  rel="noreferrer" style={{ color: 'white' }}>FastApi</a>
-                                    </Card>
-                                </Col>
-                            </Row>
-                        </Card>
-                    </Col>
-                </Row>
-                <Card size="small" title="Sonstiges" style={{ marginTop: 10 }}>
-                    <Row gutter={[10, 10]}>
-                        <Col span={6} lg={4} xs={24} md={12}>
-                            <Card size="small" hoverable style={{ background: '#001529', color: 'white', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-                                <a href="https://strapi.io/" target="_blank"  rel="noreferrer" style={{ color: 'white' }}>Strapi</a>
-                            </Card>
-                        </Col>
-                        <Col span={6} lg={4} xs={24} md={12}>
-                            <Card size="small" hoverable style={{ background: '#001529', color: 'white', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-                                <a href="https://www.shopware.com/" target="_blank"  rel="noreferrer" style={{ color: 'white' }}>Shopware</a>
-                            </Card>
-                        </Col>
-                        <Col span={6} lg={4} xs={24} md={12}>
-                            <Card size="small" hoverable style={{ background: '#001529', color: 'white', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-                                <a href="https://vuejs.org/" target="_blank"  rel="noreferrer" style={{ color: 'white' }}>Vue</a>
-                            </Card>
-                        </Col>
-                        <Col span={6} lg={4} xs={24} md={12}>
-                            <Card size="small" hoverable style={{ background: '#001529', color: 'white', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-                                <a href="https://www.intershop.com/de/" target="_blank"  rel="noreferrer" style={{ color: 'white' }}>Intershop</a>
-                            </Card>
-                        </Col>
-                    </Row>
-                </Card>
-            </Card>
-
+            <Row gutter={[10, 10]}>
+                <Col span={6} lg={4} xs={12} md={8}>
+                    <Card hoverable size="small" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+                        <Image src={reactLogo} width={150} height={50}  />
+                    </Card>
+                </Col>
+                <Col span={6} lg={4} xs={12} md={8}>
+                    <Card hoverable size="small" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+                        <Image src={reactnativeLogo} width={150} height={50}  />
+                    </Card>
+                </Col>
+                <Col span={6} lg={4} xs={12} md={8}>
+                    <Card hoverable size="small" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+                        <Image src={nextjsLogo} width={150} height={50}  />
+                    </Card>
+                </Col>
+                <Col span={6} lg={4} xs={12} md={8}>
+                    <Card hoverable size="small" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+                        <Image src={nestjsLogo} width={150} height={50}  />
+                    </Card>
+                </Col>
+                <Col span={6} lg={4} xs={12} md={8}>
+                    <Card hoverable size="small" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+                        <Image src={fastapiLogo} width={150} height={50}  />
+                    </Card>
+                </Col>
+                <Col span={6} lg={4} xs={12} md={8}>
+                    <Card hoverable size="small" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+                        <Image src={swaggerLogo} width={150} height={50}  />
+                    </Card>
+                </Col>
+                <Col span={6} lg={4} xs={12} md={8}>
+                    <Card hoverable size="small" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+                        <Image src={dockerLogo} width={150} height={50}  />
+                    </Card>
+                </Col>
+                <Col span={6} lg={4} xs={12} md={8}>
+                    <Card hoverable size="small" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+                        <Image src={intershopLogo} width={150} height={50}  />
+                    </Card>
+                </Col>
+                <Col span={6} lg={4} xs={12} md={8}>
+                    <Card hoverable size="small" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+                        <Image src={strapiLogo} width={150} height={50}  />
+                    </Card>
+                </Col>
+            </Row>
         </>
     )
 }
