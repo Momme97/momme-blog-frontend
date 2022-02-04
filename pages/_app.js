@@ -17,7 +17,7 @@ function MyApp({ Component, pageProps }) {
   const { Header, Footer, Sider, Content } = Layout;
 
   const httpLink = createHttpLink({
-    uri: 'http:///23.88.104.109:1337/graphql',
+    uri: `${process.env.NEXT_PUBLIC_CMS_URL}/graphql`,
   });
 
   const authLink = setContext((_, { headers }) => {
