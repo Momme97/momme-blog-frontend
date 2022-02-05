@@ -34,7 +34,7 @@ export default function Techstack() {
                         size="small"
                         style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column' }}
                         actions={[
-                            <div><p>Skill Level</p><Rate disabled style={{ color: 'rgba(0, 0, 0, 0.85)', fontSize: 14, textAlign: 'center' }} defaultValue={4} /></div>
+                            <div key={1}><p>Skill Level</p><Rate disabled style={{ color: 'rgba(0, 0, 0, 0.85)', fontSize: 14, textAlign: 'center' }} defaultValue={4} /></div>
 
                         ]}
                     >
@@ -47,7 +47,7 @@ export default function Techstack() {
                         size="small"
                         style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column' }}
                         actions={[
-                            <div><p>Skill Level</p><Rate disabled style={{ color: 'rgba(0, 0, 0, 0.85)', fontSize: 14, textAlign: 'center' }} defaultValue={3} /></div>
+                            <div key={1}><p>Skill Level</p><Rate disabled style={{ color: 'rgba(0, 0, 0, 0.85)', fontSize: 14, textAlign: 'center' }} defaultValue={3} /></div>
 
                         ]}
                     >
@@ -60,7 +60,7 @@ export default function Techstack() {
                         size="small"
                         style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column' }}
                         actions={[
-                            <div><p>Skill Level</p><Rate disabled style={{ color: 'rgba(0, 0, 0, 0.85)', fontSize: 14, textAlign: 'center' }} defaultValue={4} /></div>
+                            <div key={1}><p>Skill Level</p><Rate disabled style={{ color: 'rgba(0, 0, 0, 0.85)', fontSize: 14, textAlign: 'center' }} defaultValue={4} /></div>
 
                         ]}
                     >
@@ -74,7 +74,7 @@ export default function Techstack() {
                         size="small"
                         style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column' }}
                         actions={[
-                            <div><p>Skill Level</p><Rate disabled style={{ color: 'rgba(0, 0, 0, 0.85)', fontSize: 14, textAlign: 'center' }} defaultValue={3} /></div>
+                            <div key={1}><p>Skill Level</p><Rate disabled style={{ color: 'rgba(0, 0, 0, 0.85)', fontSize: 14, textAlign: 'center' }} defaultValue={3} /></div>
 
                         ]}
                     >
@@ -87,7 +87,7 @@ export default function Techstack() {
                         size="small"
                         style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column' }}
                         actions={[
-                            <div><p>Skill Level</p><Rate disabled style={{ color: 'rgba(0, 0, 0, 0.85)', fontSize: 14, textAlign: 'center' }} defaultValue={2} /></div>
+                            <div key={1}><p>Skill Level</p><Rate disabled style={{ color: 'rgba(0, 0, 0, 0.85)', fontSize: 14, textAlign: 'center' }} defaultValue={2} /></div>
 
                         ]}
                     >
@@ -101,7 +101,7 @@ export default function Techstack() {
                         size="small"
                         style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column' }}
                         actions={[
-                            <div><p>Skill Level</p><Rate disabled style={{ color: 'rgba(0, 0, 0, 0.85)', fontSize: 14, textAlign: 'center' }} defaultValue={4} /></div>
+                            <div key={1}><p>Skill Level</p><Rate disabled style={{ color: 'rgba(0, 0, 0, 0.85)', fontSize: 14, textAlign: 'center' }} defaultValue={4} /></div>
 
                         ]}
                     >
@@ -114,7 +114,7 @@ export default function Techstack() {
                         size="small"
                         style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column' }}
                         actions={[
-                            <div><p>Skill Level</p><Rate disabled style={{ color: 'rgba(0, 0, 0, 0.85)', fontSize: 14, textAlign: 'center' }} defaultValue={2} /></div>
+                            <div key={1}><p>Skill Level</p><Rate disabled style={{ color: 'rgba(0, 0, 0, 0.85)', fontSize: 14, textAlign: 'center' }} defaultValue={2} /></div>
 
                         ]}
                     >
@@ -127,7 +127,7 @@ export default function Techstack() {
                         size="small"
                         style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column' }}
                         actions={[
-                            <div><p>Skill Level</p><Rate disabled style={{ color: 'rgba(0, 0, 0, 0.85)', fontSize: 14, textAlign: 'center' }} defaultValue={3} /></div>
+                            <div key={1}><p>Skill Level</p><Rate disabled style={{ color: 'rgba(0, 0, 0, 0.85)', fontSize: 14, textAlign: 'center' }} defaultValue={3} /></div>
 
                         ]}
                     >
@@ -141,7 +141,7 @@ export default function Techstack() {
                         size="small"
                         style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column' }}
                         actions={[
-                            <div><p>Skill Level</p><Rate disabled style={{ color: 'rgba(0, 0, 0, 0.85)', fontSize: 14, textAlign: 'center' }} defaultValue={4} /></div>
+                            <div key={1}><p>Skill Level</p><Rate disabled style={{ color: 'rgba(0, 0, 0, 0.85)', fontSize: 14, textAlign: 'center' }} defaultValue={4} /></div>
 
                         ]}
                     >
@@ -154,7 +154,7 @@ export default function Techstack() {
                         size="small"
                         style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column' }}
                         actions={[
-                            <div><p>Skill Level</p><Rate disabled style={{ color: 'rgba(0, 0, 0, 0.85)', fontSize: 14, textAlign: 'center' }} defaultValue={5} /></div>
+                            <div key={1}><p>Skill Level</p><Rate disabled style={{ color: 'rgba(0, 0, 0, 0.85)', fontSize: 14, textAlign: 'center' }} defaultValue={5} /></div>
 
                         ]}
                     >
@@ -167,7 +167,7 @@ export default function Techstack() {
                         size="small"
                         style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column' }}
                         actions={[
-                            <div><p>Skill Level</p><Rate disabled style={{ color: 'rgba(0, 0, 0, 0.85)', fontSize: 14, textAlign: 'center' }} defaultValue={4} /></div>
+                            <div key={1}><p>Skill Level</p><Rate disabled style={{ color: 'rgba(0, 0, 0, 0.85)', fontSize: 14, textAlign: 'center' }} defaultValue={4} /></div>
 
                         ]}
                     >
@@ -181,7 +181,7 @@ export default function Techstack() {
                         size="small"
                         style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column' }}
                         actions={[
-                            <div><p>Skill Level</p><Rate disabled style={{ color: 'rgba(0, 0, 0, 0.85)', fontSize: 14, textAlign: 'center' }} defaultValue={4} /></div>
+                            <div key={1} ><p>Skill Level</p><Rate disabled style={{ color: 'rgba(0, 0, 0, 0.85)', fontSize: 14, textAlign: 'center' }} defaultValue={4} /></div>
 
                         ]}
                     >
@@ -194,13 +194,7 @@ export default function Techstack() {
                         <Image src={stripeLogo} width={150} height={50} />
                     </Card>
                 </Col>
-                {/* 
-                <Col span={6} lg={4} xs={12} md={8}>
-                    <Card hoverable size="small" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-                        <Image src={csharpLogo} width={150} height={50} />
-                    </Card>
-                </Col>
-                */}
+                
 
                 <Col span={6} lg={4} xs={12} md={8}>
                     <Card hoverable size="small" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>

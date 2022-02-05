@@ -13,7 +13,6 @@ import 'moment/locale/de';
 import { Layout } from 'antd';
 import HeaderComponent from '../components/Header';
 import FooterComponent from '../components/Footer';
-import FeatureImage from '../components/FeatureImage';
 function MyApp({ Component, pageProps }) {
   const { Header, Footer, Sider, Content } = Layout;
 
