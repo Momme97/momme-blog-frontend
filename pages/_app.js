@@ -39,7 +39,7 @@ function MyApp({ Component, pageProps }) {
 
   return (
     <Layout>
-      <Header style={{ position: 'fixed', zIndex: 1, width: '100%' }}>
+      <Header style={{ position: 'fixed', zIndex: 10, width: '100%' }}>
         <HeaderComponent />
       </Header>
       <Content className="content-container" >

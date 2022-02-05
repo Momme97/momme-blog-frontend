@@ -68,7 +68,7 @@ export default function Home() {
       <h2 style={{ textAlign: 'center', marginTop: 10 }}>Mein Blog</h2>
       <Row gutter={[10, 10]} style={{ marginTop: 10 }}>
         {blogArticles.map((blogItem, index) => (
-          <Col span={6} lg={4} xs={24} md={12} onClick={() => router.push(`/post/${blogItem.id}`)} key={index}>
+          <Col span={6} xxl={4} xl={8} lg={8} xs={24} md={12} onClick={() => router.push(`/post/${blogItem.id}`)} key={index}>
             <Card
               hoverable
               cover={<img alt="example" src={`${process.env.NEXT_PUBLIC_CMS_URL}${blogItem.attributes.articleImage.data.attributes.url}`} />}
