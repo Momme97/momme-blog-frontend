@@ -34,4 +34,15 @@
         background-image:unset;
         margin-bottom:50px;
     }
+  
+  } 
+
+  @media only screen and (max-width: 600px) {
+    .profileImageContainer {
+        display:none;
+
+    }
+    .profilePic {
+        display:none;
+    }
   } 
