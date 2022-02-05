@@ -59,10 +59,14 @@ export default function Home() {
               wie z.B. React und NodeJs. Desweiteren betreibe ich einen kleinen Tech Blog in welchem ich
               spannende Dinge aus meinem Arbeitsalttag zusammentrage.
             </Card>
+
+          </Col>
+          <Col span={6} lg={8} xs={24} md={12}>
+            
             <CertificationCard />
 
           </Col>
-          <Col span={6} lg={16} xs={24} md={12}>
+          <Col span={6} lg={24} xs={24} md={12}>
             <TechStack />
           </Col>
 
