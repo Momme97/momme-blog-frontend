@@ -47,7 +47,8 @@ export default function Home() {
       <FeatureImage />
       <Row gutter={[10, 10]} style={{ marginTop: 10 }}>
         <Col span={6} lg={8} xs={24} md={12}>
-          <Card title="Über mich" style={{ height: '100%' }}>
+          <h2 className='about-headline'>Über mich</h2>
+          <Card >
             Auzubildener zum Fachinformatiker für Anwendungsentwicklung aus Kiel.
             Nach einem angefangenen Informatik Studium in Flensburg werde ich im Sommer 2022 die Ausbildung
             zum Fachinformatiker für Anwendungsentwicklung.
@@ -55,12 +56,14 @@ export default function Home() {
             wie z.B. React und NodeJs. Desweiteren betreibe ich einen kleinen Tech Blog in welchem ich
             spannende Dinge aus meinem Arbeitsalttag zusammentrage.
           </Card>
+          <CertificationCard />
+
         </Col>
         <Col span={6} lg={16} xs={24} md={12}>
           <TechStack />
         </Col>
+        
       </Row>
-      <CertificationCard />
 
       <h2 style={{ textAlign: 'center', marginTop: 10 }}>Mein Blog</h2>
       <Row gutter={[10, 10]} style={{ marginTop: 10 }}>
