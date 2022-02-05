@@ -39,10 +39,10 @@
 
   @media only screen and (max-width: 600px) {
     .profileImageContainer {
-        display:none;
+        /*display:none;*/
 
     }
     .profilePic {
-        display:none;
+        /*display:none;*/
     }
   } 
