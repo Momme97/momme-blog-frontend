@@ -51,7 +51,7 @@ export default function Home() {
         <Row gutter={[10, 10]} style={{ marginTop: 10 }}>
           <Col span={6} lg={8} xs={24} md={12}>
             <h2 className='about-headline'>Über mich</h2>
-            <Card >
+            <Card style={{marginBottom:10}}>
               Auzubildener zum Fachinformatiker für Anwendungsentwicklung aus Kiel.
               Nach einem angefangenen Informatik Studium in Flensburg werde ich im Sommer 2022 die Ausbildung
               zum Fachinformatiker für Anwendungsentwicklung.
