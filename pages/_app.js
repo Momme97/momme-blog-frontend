@@ -43,7 +43,7 @@ function MyApp({ Component, pageProps }) {
         <HeaderComponent />
       </Header>
         <ApolloProvider client={client}>
-          <div>
+          <div className="general-padding">
             <Component {...pageProps} />
           </div>
         </ApolloProvider>
