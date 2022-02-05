@@ -76,7 +76,7 @@ export default function Post() {
   if (error) return `Error! ${error.message}`;
 
   return (
-    <Content className="content-container" style={{marginTop:20}}>
+    <Content className="content-container" style={{marginTop:65}}>
       <Head>
         <title>Blog | {data.blogArticle.data.attributes.Title} | Momme Ristow</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
