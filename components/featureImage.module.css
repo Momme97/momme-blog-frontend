@@ -1,13 +1,13 @@
 .featureContainer {
     padding:10px;
-    height:500px;
+    height:700px;
     display:flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    background-image: url('../public/home-banner.webp');
-
-
+    background-image: url('../public/skyline-kiel.png'); 
+    background-size: contain;
+    background-position: bottom;
+    background-repeat: no-repeat;
 }
 
 .bgImage {
@@ -21,3 +21,16 @@
     height:auto;
     border-radius: 100%;
 }
+
+@media only screen and (max-width: 1000px) {
+    .featureContainer {
+        padding:10px;
+        height:100%;
+        background-color:'white';
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        background-image:unset;
+        margin-bottom:50px;
+    }
+  } 
