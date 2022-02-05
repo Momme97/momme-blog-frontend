@@ -5,7 +5,7 @@ import { useRouter } from 'next/router'
 import moment from 'moment';
 import axios from 'axios';
 import Head from 'next/head'
-
+import Image from 'next/image';
 //Custom Components
 import FeatureImage from '../components/FeatureImage';
 import TechStack from '../components/TechStack';
@@ -74,7 +74,13 @@ export default function Home() {
             <Col span={6} xxl={4} xl={8} lg={8} xs={24} md={12} onClick={() => router.push(`/post/${blogItem.id}`)} key={index}>
               <Card
                 hoverable
-                cover={<img alt="example" src={`${process.env.NEXT_PUBLIC_CMS_URL}${blogItem.attributes.articleImage.data.attributes.url}`} />}
+                cover={
+                  <Image
+                    src={process.env.NEXT_PUBLIC_CMS_URL + blogItem.attributes.articleImage.data.attributes.url}
+                    width={728}
+                    height={300}
+                  />
+                }
                 bodyStyle={{ height: '100%' }}
 
               >
