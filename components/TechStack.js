@@ -14,6 +14,10 @@ import csharpLogo from '../public/techstack/csharp-logo.png';
 import mongodbLogo from '../public/techstack/mongodb-logo.png';
 import apacheLogo from '../public/techstack/apache-logo.png';
 import ubuntuLogo from '../public/techstack/ubuntu-logo.png';
+import mysqlLogo from '../public/techstack/mysql-logo.png';
+import typeormLogo from '../public/techstack/typeorm-logo.png';
+import graphqlLogo from '../public/techstack/graphql-logo.png';
+import javaLogo from '../public/techstack/java-logo.png';
 
 import Image from 'next/image'
 import style from './techstack.module.css';
@@ -97,8 +101,26 @@ export default function Techstack() {
                         <Image src={ubuntuLogo} width={150} height={50} />
                     </Card>
                 </Col>
-
-
+                <Col span={6} lg={4} xs={12} md={8}>
+                    <Card hoverable size="small" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+                        <Image src={mysqlLogo} width={150} height={50} />
+                    </Card>
+                </Col>
+                <Col span={6} lg={4} xs={12} md={8}>
+                    <Card hoverable size="small" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+                        <Image src={typeormLogo} width={150} height={50} />
+                    </Card>
+                </Col>
+                <Col span={6} lg={4} xs={12} md={8}>
+                    <Card hoverable size="small" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+                        <Image src={graphqlLogo} width={150} height={50} />
+                    </Card>
+                </Col>
+                <Col span={6} lg={4} xs={12} md={8}>
+                    <Card hoverable size="small" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+                        <Image src={javaLogo} width={150} height={50} />
+                    </Card>
+                </Col>
             </Row>
         </>
     )
