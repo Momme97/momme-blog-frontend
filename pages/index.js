@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Row, Col, Card, Button, Tag, Divider, Pagination } from 'antd';
+import { Row, Col, Card, Layout, Tag, Divider, Pagination } from 'antd';
 import { CalendarOutlined, UserOutlined } from '@ant-design/icons';
 import { useRouter } from 'next/router'
 import moment from 'moment';
@@ -14,6 +14,7 @@ import CertificationCard from '../components/CertificationCard';
 export default function Home() {
   const { Meta } = Card;
   const router = useRouter();
+  const { Header, Footer, Sider, Content } = Layout;
 
   const [blogArticles, setBlogArticle] = useState([]);
   const [totalPages, setTotalPages] = useState(0);
@@ -40,58 +41,62 @@ export default function Home() {
 
   return (
     <div>
-      <Head>
-        <title>Home | Momme Ristow</title>
-        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-      </Head>
       <FeatureImage />
-      <Row gutter={[10, 10]} style={{ marginTop: 10 }}>
-        <Col span={6} lg={8} xs={24} md={12}>
-          <h2 className='about-headline'>Über mich</h2>
-          <Card >
-            Auzubildener zum Fachinformatiker für Anwendungsentwicklung aus Kiel.
-            Nach einem angefangenen Informatik Studium in Flensburg werde ich im Sommer 2022 die Ausbildung
-            zum Fachinformatiker für Anwendungsentwicklung.
-            In meiner Freizeit beschäftige ich mich mit der Entwicklung von Webapps mit aktuellen Technologien
-            wie z.B. React und NodeJs. Desweiteren betreibe ich einen kleinen Tech Blog in welchem ich
-            spannende Dinge aus meinem Arbeitsalttag zusammentrage.
-          </Card>
-          <CertificationCard />
+      <Content className="content-container" >
+        <Head>
+          <title>Home | Momme Ristow</title>
+          <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        </Head>
 
-        </Col>
-        <Col span={6} lg={16} xs={24} md={12}>
-          <TechStack />
-        </Col>
-        
-      </Row>
-
-      <h2 style={{ textAlign: 'center', marginTop: 10 }}>Mein Blog</h2>
-      <Row gutter={[10, 10]} style={{ marginTop: 10 }}>
-        {blogArticles.map((blogItem, index) => (
-          <Col span={6} xxl={4} xl={8} lg={8} xs={24} md={12} onClick={() => router.push(`/post/${blogItem.id}`)} key={index}>
-            <Card
-              hoverable
-              cover={<img alt="example" src={`${process.env.NEXT_PUBLIC_CMS_URL}${blogItem.attributes.articleImage.data.attributes.url}`} />}
-              bodyStyle={{ height: '100%' }}
-
-            >
-              <Meta description={
-                <>
-                  <h2 style={{ fontSize: 18 }}>{blogItem.attributes.Title}</h2>
-                  <p style={{ height: 100 }}>{blogItem.attributes.Description}</p>
-                </>
-              } />
-              <Divider />
-              <div style={{display:'flex'}}>
-                <Tag style={{ marginTop: 0 }}><UserOutlined /> {blogItem.attributes.Author}</Tag>
-                <Tag style={{ marginTop: 0 }}><CalendarOutlined /> {moment(blogItem.attributes.publishedAt).locale('de').fromNow()}</Tag>
-              </div>
-
+        <Row gutter={[10, 10]} style={{ marginTop: 10 }}>
+          <Col span={6} lg={8} xs={24} md={12}>
+            <h2 className='about-headline'>Über mich</h2>
+            <Card >
+              Auzubildener zum Fachinformatiker für Anwendungsentwicklung aus Kiel.
+              Nach einem angefangenen Informatik Studium in Flensburg werde ich im Sommer 2022 die Ausbildung
+              zum Fachinformatiker für Anwendungsentwicklung.
+              In meiner Freizeit beschäftige ich mich mit der Entwicklung von Webapps mit aktuellen Technologien
+              wie z.B. React und NodeJs. Desweiteren betreibe ich einen kleinen Tech Blog in welchem ich
+              spannende Dinge aus meinem Arbeitsalttag zusammentrage.
             </Card>
+            <CertificationCard />
+
           </Col>
-        ))}
-      </Row>
-      <Pagination onChange={(e) => changePagination(e)} defaultCurrent={1} total={totalPages} style={{ marginTop: 10 }} />
+          <Col span={6} lg={16} xs={24} md={12}>
+            <TechStack />
+          </Col>
+
+        </Row>
+
+        <h2 style={{ textAlign: 'center', marginTop: 10 }}>Mein Blog</h2>
+        <Row gutter={[10, 10]} style={{ marginTop: 10 }}>
+          {blogArticles.map((blogItem, index) => (
+            <Col span={6} xxl={4} xl={8} lg={8} xs={24} md={12} onClick={() => router.push(`/post/${blogItem.id}`)} key={index}>
+              <Card
+                hoverable
+                cover={<img alt="example" src={`${process.env.NEXT_PUBLIC_CMS_URL}${blogItem.attributes.articleImage.data.attributes.url}`} />}
+                bodyStyle={{ height: '100%' }}
+
+              >
+                <Meta description={
+                  <>
+                    <h2 style={{ fontSize: 18 }}>{blogItem.attributes.Title}</h2>
+                    <p style={{ height: 100 }}>{blogItem.attributes.Description}</p>
+                  </>
+                } />
+                <Divider />
+                <div style={{ display: 'flex' }}>
+                  <Tag style={{ marginTop: 0 }}><UserOutlined /> {blogItem.attributes.Author}</Tag>
+                  <Tag style={{ marginTop: 0 }}><CalendarOutlined /> {moment(blogItem.attributes.publishedAt).locale('de').fromNow()}</Tag>
+                </div>
+
+              </Card>
+            </Col>
+          ))}
+        </Row>
+        <Pagination onChange={(e) => changePagination(e)} defaultCurrent={1} total={totalPages} style={{ marginTop: 10 }} />
+      </Content>
     </div>
+
   )
 }

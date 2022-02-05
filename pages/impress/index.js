@@ -1,8 +1,11 @@
 import Head from 'next/head'
+import { Layout } from 'antd';
 
 export default function Impress() {
+    const { Content } = Layout;
+
     return (
-        <div>
+        <Content className="content-container" style={{marginTop:20}}>
             <Head>
                 <title>Impressum | Momme Ristow</title>
                 <meta name="viewport" content="initial-scale=1.0, width=device-width" />
@@ -20,6 +23,6 @@ export default function Impress() {
             <p>Momme Ristow</p>
 
             <p>Quelle: <a href="https://www.e-recht24.de">eRecht24</a></p>
-        </div>
+        </Content>
     )
 }

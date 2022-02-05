@@ -1,0 +1,9 @@
+.headline {
+    text-align: left;
+}
+
+@media only screen and (max-width: 1000px) {
+    .headline {
+        text-align: center;
+    }
+  } 

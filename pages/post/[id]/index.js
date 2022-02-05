@@ -1,6 +1,6 @@
 import { useRouter } from 'next/router'
 import styles from './post.module.css';
-import { Typography, Button, Tag, Spin } from 'antd';
+import { Typography, Button, Tag, Spin, Layout } from 'antd';
 import { CalendarOutlined, UserOutlined, LeftCircleOutlined, RightCircleOutlined } from '@ant-design/icons';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { materialLight } from 'react-syntax-highlighter/dist/esm/styles/prism';
@@ -15,6 +15,8 @@ export default function Post() {
   const { Title, Paragraph, Text, Link } = Typography;
   const router = useRouter();
   const { id } = router.query;
+  const { Content } = Layout;
+
 
   const GETSINGLEBLOG = gql`
     query {
@@ -74,7 +76,7 @@ export default function Post() {
   if (error) return `Error! ${error.message}`;
 
   return (
-    <>
+    <Content className="content-container" style={{marginTop:20}}>
       <Head>
         <title>Blog | {data.blogArticle.data.attributes.Title} | Momme Ristow</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
@@ -124,7 +126,7 @@ export default function Post() {
           ))}
         </Typography>
       </div>
-    </>
+      </Content>
 
-  )
+      )
 }

@@ -13,7 +13,7 @@ import 'moment/locale/de';
 import { Layout } from 'antd';
 import HeaderComponent from '../components/Header';
 import FooterComponent from '../components/Footer';
-
+import FeatureImage from '../components/FeatureImage';
 function MyApp({ Component, pageProps }) {
   const { Header, Footer, Sider, Content } = Layout;
 
@@ -42,13 +42,11 @@ function MyApp({ Component, pageProps }) {
       <Header style={{ position: 'fixed', zIndex: 10, width: '100%' }}>
         <HeaderComponent />
       </Header>
-      <Content className="content-container" >
         <ApolloProvider client={client}>
-          <div style={{ padding: 10 }}>
+          <div>
             <Component {...pageProps} />
           </div>
         </ApolloProvider>
-      </Content>
       <Footer>
         <FooterComponent />
       </Footer>
