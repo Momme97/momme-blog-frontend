@@ -26,7 +26,7 @@ export default function Techstack() {
 
     return (
         <>
-            <h2 className={style.headline} >Mein Technologie Stack</h2>
+            <h2 style={{textAlign:'center'}} >Mein Technologie Stack</h2>
             <Row gutter={[1, 1]}>
                 <Col span={6} lg={4} xs={12} md={8}>
                     <Card

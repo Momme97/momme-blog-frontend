@@ -10,6 +10,7 @@ import Image from 'next/image';
 import FeatureImage from '../components/FeatureImage';
 import TechStack from '../components/TechStack';
 import CertificationCard from '../components/CertificationCard';
+import ContentCard from '../components/ContentCard';
 
 export default function Home() {
   const { Meta } = Card;
@@ -47,21 +48,10 @@ export default function Home() {
           <title>Home | Momme Ristow</title>
           <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         </Head>
-
+        <ContentCard />
         <Row gutter={[10, 10]} style={{ marginTop: 10 }}>
-          <Col span={6} lg={8} xs={24} md={12}>
-            <h2 className='about-headline'>Über mich</h2>
-            <Card style={{marginBottom:10}}>
-              Auzubildener zum Fachinformatiker für Anwendungsentwicklung aus Kiel.
-              Nach einem angefangenen Informatik Studium in Flensburg werde ich im Sommer 2022 die Ausbildung
-              zum Fachinformatiker für Anwendungsentwicklung.
-              In meiner Freizeit beschäftige ich mich mit der Entwicklung von Webapps mit aktuellen Technologien
-              wie z.B. React und NodeJs. Desweiteren betreibe ich einen kleinen Tech Blog in welchem ich
-              spannende Dinge aus meinem Arbeitsalttag zusammentrage.
-            </Card>
-
-          </Col>
-          <Col span={6} lg={8} xs={24} md={12}>
+          
+          <Col span={6} xl={24} lg={24} xs={24} md={12}>
             
             <CertificationCard />
 

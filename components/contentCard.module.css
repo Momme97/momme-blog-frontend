@@ -1,0 +1,5 @@
+.cardImage {
+    transform: skewY(2deg);
+    border-radius: 10px;
+    scale: 95%;
+}

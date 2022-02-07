@@ -6,27 +6,27 @@ import securityjourneyLogo from '../public/certifications/securityjourney-logo.p
 export default function CertificationCard() {
     return (
         <>
-        <h2 className='about-headline'>Zertifizierungen/Trainings</h2>
-                <Row gutter={[1, 1]}>
-                    <Col span={6} lg={8} xs={24} md={12}>
-                        <Card hoverable size="small" style={{height:'100%'}} bodyStyle={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }} >
-                            <Image src={selligentLogo} width={150} height={50} />
-                            <Tag>Campaing Fundamentals</Tag>
-                        </Card>
-                    </Col>
-                    <Col span={6} lg={8} xs={24} md={12}>
-                        <Card hoverable size="small" style={{height:'100%'}} bodyStyle={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-                            <Image src={selligentLogo} width={150} height={50} />
-                            <Tag>Site Fundamentals</Tag>
-                        </Card>
-                    </Col>
-                    <Col span={6} lg={8} xs={24} md={12}>
-                        <Card hoverable size="small" style={{height:'100%'}} bodyStyle={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-                            <Image src={securityjourneyLogo} width={150} height={50} />
-                            <Tag>White Belt</Tag>
-                        </Card>
-                    </Col>
-                </Row>
+            <h2 style={{ textAlign: 'center' }}>Zertifizierungen/Trainings</h2>
+            <Row gutter={[1, 1]} style={{ marginTop: 20 }} >
+                <Col span={6} lg={8} xs={24} md={12}>
+                    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', padding: 20 }}>
+                        <Image src={selligentLogo} width={150} height={50} />
+                        <Tag>Campaing Fundamentals</Tag>
+                    </div>
+                </Col>
+                <Col span={6} lg={8} xs={24} md={12}>
+                    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', padding: 20 }}>
+                        <Image src={selligentLogo} width={150} height={50} />
+                        <Tag>Site Fundamentals</Tag>
+                    </div>
+                </Col>
+                <Col span={6} lg={8} xs={24} md={12}>
+                    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', padding: 20 }}>
+                        <Image src={securityjourneyLogo} width={150} height={50} />
+                        <Tag>White Belt</Tag>
+                    </div>
+                </Col>
+            </Row>
 
         </>
 

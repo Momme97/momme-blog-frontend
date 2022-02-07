@@ -1,6 +1,6 @@
 .featureContainer {
     padding:10px;
-    height:700px;
+    height:92vh;
     display:flex;
     flex-direction: column;
     align-items: center;
@@ -9,6 +9,7 @@
     background-position: bottom;
     background-repeat: no-repeat;
     margin-top: 70px;
+    padding-top: 20px;
 }
 
 .bgImage {
