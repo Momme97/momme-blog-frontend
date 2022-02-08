@@ -2,8 +2,20 @@
     text-align: left;
 }
 
+.techstackWrapper {
+    /*transform: skewY(-2deg); */
+    border-radius: 10px;
+    scale: 100%;
+}
+
 @media only screen and (max-width: 1000px) {
     .headline {
         text-align: center;
     }
+    .techstackWrapper {
+        transform: skewY(0deg);
+        border-radius: 10px;
+        scale: 100%;
+    }
+    
   } 

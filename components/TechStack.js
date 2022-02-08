@@ -25,42 +25,40 @@ import { Rate } from 'antd';
 export default function Techstack() {
 
     return (
-        <>
-            <h2 style={{textAlign:'center'}} >Mein Technologie Stack</h2>
-            <Row gutter={[1, 1]}>
-                <Col span={6} lg={4} xs={12} md={8}>
+        <div style={{marginTop:20}}>
+            <h2 style={{textAlign:'center'}}>Mein Technologie Stack</h2>
+
+            <Row gutter={[1, 1]} className={style.techstackWrapper}>
+                <Col span={6} lg={6} xs={12} md={8}>
                     <Card
                         hoverable
-                        size="small"
+                        size="large"
                         style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column' }}
                         actions={[
-                            <div key={1}><p>Skill Level</p><Rate disabled style={{ color: 'rgba(0, 0, 0, 0.85)', fontSize: 14, textAlign: 'center' }} defaultValue={4} /></div>
 
                         ]}
                     >
                         <Image src={reactLogo} width={150} height={50} />
                     </Card>
                 </Col>
-                <Col span={6} lg={4} xs={12} md={8}>
+                <Col span={6} lg={6} xs={12} md={8}>
                     <Card
                         hoverable
-                        size="small"
+                        size="large"
                         style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column' }}
                         actions={[
-                            <div key={1}><p>Skill Level</p><Rate disabled style={{ color: 'rgba(0, 0, 0, 0.85)', fontSize: 14, textAlign: 'center' }} defaultValue={3} /></div>
 
                         ]}
                     >
                         <Image src={reactnativeLogo} width={150} height={50} />
                     </Card>
                 </Col>
-                <Col span={6} lg={4} xs={12} md={8}>
+                <Col span={6} lg={6} xs={12} md={8}>
                     <Card
                         hoverable
-                        size="small"
+                        size="large"
                         style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column' }}
                         actions={[
-                            <div key={1}><p>Skill Level</p><Rate disabled style={{ color: 'rgba(0, 0, 0, 0.85)', fontSize: 14, textAlign: 'center' }} defaultValue={4} /></div>
 
                         ]}
                     >
@@ -68,13 +66,12 @@ export default function Techstack() {
                     </Card>
 
                 </Col>
-                <Col span={6} lg={4} xs={12} md={8}>
+                <Col span={6} lg={6} xs={12} md={8}>
                     <Card
                         hoverable
-                        size="small"
+                        size="large"
                         style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column' }}
                         actions={[
-                            <div key={1}><p>Skill Level</p><Rate disabled style={{ color: 'rgba(0, 0, 0, 0.85)', fontSize: 14, textAlign: 'center' }} defaultValue={3} /></div>
 
                         ]}
                     >
@@ -84,10 +81,9 @@ export default function Techstack() {
                 <Col span={6} lg={4} xs={12} md={8}>
                     <Card
                         hoverable
-                        size="small"
+                        size="large"
                         style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column' }}
                         actions={[
-                            <div key={1}><p>Skill Level</p><Rate disabled style={{ color: 'rgba(0, 0, 0, 0.85)', fontSize: 14, textAlign: 'center' }} defaultValue={2} /></div>
 
                         ]}
                     >
@@ -98,10 +94,9 @@ export default function Techstack() {
                 <Col span={6} lg={4} xs={12} md={8}>
                     <Card
                         hoverable
-                        size="small"
+                        size="large"
                         style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column' }}
                         actions={[
-                            <div key={1}><p>Skill Level</p><Rate disabled style={{ color: 'rgba(0, 0, 0, 0.85)', fontSize: 14, textAlign: 'center' }} defaultValue={4} /></div>
 
                         ]}
                     >
@@ -111,10 +106,9 @@ export default function Techstack() {
                 <Col span={6} lg={4} xs={12} md={8}>
                     <Card
                         hoverable
-                        size="small"
+                        size="large"
                         style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column' }}
                         actions={[
-                            <div key={1}><p>Skill Level</p><Rate disabled style={{ color: 'rgba(0, 0, 0, 0.85)', fontSize: 14, textAlign: 'center' }} defaultValue={2} /></div>
 
                         ]}
                     >
@@ -124,10 +118,9 @@ export default function Techstack() {
                 <Col span={6} lg={4} xs={12} md={8}>
                     <Card
                         hoverable
-                        size="small"
+                        size="large"
                         style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column' }}
                         actions={[
-                            <div key={1}><p>Skill Level</p><Rate disabled style={{ color: 'rgba(0, 0, 0, 0.85)', fontSize: 14, textAlign: 'center' }} defaultValue={3} /></div>
 
                         ]}
                     >
@@ -138,10 +131,9 @@ export default function Techstack() {
                 <Col span={6} lg={4} xs={12} md={8}>
                     <Card
                         hoverable
-                        size="small"
+                        size="large"
                         style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column' }}
                         actions={[
-                            <div key={1}><p>Skill Level</p><Rate disabled style={{ color: 'rgba(0, 0, 0, 0.85)', fontSize: 14, textAlign: 'center' }} defaultValue={4} /></div>
 
                         ]}
                     >
@@ -151,10 +143,9 @@ export default function Techstack() {
                 <Col span={6} lg={4} xs={12} md={8}>
                     <Card
                         hoverable
-                        size="small"
+                        size="large"
                         style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column' }}
                         actions={[
-                            <div key={1}><p>Skill Level</p><Rate disabled style={{ color: 'rgba(0, 0, 0, 0.85)', fontSize: 14, textAlign: 'center' }} defaultValue={5} /></div>
 
                         ]}
                     >
@@ -164,10 +155,9 @@ export default function Techstack() {
                 <Col span={6} lg={4} xs={12} md={8}>
                     <Card
                         hoverable
-                        size="small"
+                        size="large"
                         style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column' }}
                         actions={[
-                            <div key={1}><p>Skill Level</p><Rate disabled style={{ color: 'rgba(0, 0, 0, 0.85)', fontSize: 14, textAlign: 'center' }} defaultValue={4} /></div>
 
                         ]}
                     >
@@ -178,10 +168,9 @@ export default function Techstack() {
                 <Col span={6} lg={4} xs={12} md={8}>
                     <Card
                         hoverable
-                        size="small"
+                        size="large"
                         style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column' }}
                         actions={[
-                            <div key={1} ><p>Skill Level</p><Rate disabled style={{ color: 'rgba(0, 0, 0, 0.85)', fontSize: 14, textAlign: 'center' }} defaultValue={4} /></div>
 
                         ]}
                     >
@@ -190,38 +179,38 @@ export default function Techstack() {
 
                 </Col>
                 <Col span={6} lg={4} xs={12} md={8}>
-                    <Card hoverable size="small" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+                    <Card hoverable size="large" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                         <Image src={stripeLogo} width={150} height={50} />
                     </Card>
                 </Col>
-                
+
 
                 <Col span={6} lg={4} xs={12} md={8}>
-                    <Card hoverable size="small" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+                    <Card hoverable size="large" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                         <Image src={apacheLogo} width={150} height={50} />
                     </Card>
                 </Col>
                 <Col span={6} lg={4} xs={12} md={8}>
-                    <Card hoverable size="small" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+                    <Card hoverable size="large" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                         <Image src={ubuntuLogo} width={150} height={50} />
                     </Card>
                 </Col>
                 <Col span={6} lg={4} xs={12} md={8}>
-                    <Card hoverable size="small" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+                    <Card hoverable size="large" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                         <Image src={typeormLogo} width={150} height={50} />
                     </Card>
                 </Col>
                 <Col span={6} lg={4} xs={12} md={8}>
-                    <Card hoverable size="small" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+                    <Card hoverable size="large" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                         <Image src={graphqlLogo} width={150} height={50} />
                     </Card>
                 </Col>
                 <Col span={6} lg={4} xs={12} md={8}>
-                    <Card hoverable size="small" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+                    <Card hoverable size="large" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                         <Image src={javaLogo} width={150} height={50} />
                     </Card>
                 </Col>
             </Row>
-        </>
+        </div>
     )
 }

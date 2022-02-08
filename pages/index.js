@@ -50,18 +50,15 @@ export default function Home() {
         </Head>
         <ContentCard />
         <Row gutter={[10, 10]} style={{ marginTop: 10 }}>
-          
+
           <Col span={6} xl={24} lg={24} xs={24} md={12}>
-            
+
             <CertificationCard />
 
           </Col>
-          <Col span={6} lg={24} xs={24} md={12}>
-            <TechStack />
-          </Col>
-
         </Row>
 
+        <TechStack />
         <h2 style={{ textAlign: 'center', marginTop: 10 }}>Mein Blog</h2>
         <Row gutter={[10, 10]} style={{ marginTop: 10 }}>
           {blogArticles.map((blogItem, index) => (
